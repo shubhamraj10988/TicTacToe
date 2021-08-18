@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tic Tac Toe</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tictac.css">
+    <script src ="tictac.js" defer></script>
+ 
+</head>
+<body>
+    
+    <div class="win"></div>
+   
+
+    <div class="board1">
+        <button onclick="document.getElementById('player').play()">Play</button>
+        <button onclick="document.getElementById('player').pause()">Pause</button>
+        <button onclick="document.getElementById('player').volume+=0.1">Volume Up</button>
+	    <button onclick="document.getElementById('player').volume-=0.1">Volume Down</button>
+
+        <h1>Tic Tac Toe Fun</h1>
+
+        <div class="board2">
+            <img src="./ab53c3258caa5c3c691b4de46cb5ad88.gif"width="200"height="200">
+        </div>
+        
+        <audio id="player" src="./mario_kart_mario.mp3" autoplay loop></audio>
+
+    <div class="board" id="board">
+      
+        <div class="cell" data-cell></div> 
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell ></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+   </div>
+    </div>
+   
+    <div class="winning-message" id="winningMessage">
+
+        <div data-winning-message-text></div>
+        <button id ="restartButton">Restart</button>
+        <img src="./tenor.gif">
+        </div>
+        
+</body>
+</html>
